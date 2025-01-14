@@ -210,7 +210,7 @@ defmodule Debounce do
       end
 
     :error_logger.error_msg(
-      '~p ~p received unexpected message: ~p~n',
+      ~c"~p ~p received unexpected message: ~p~n",
       [__MODULE__, proc, msg]
     )
 
